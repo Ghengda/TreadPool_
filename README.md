@@ -1,1 +1,6 @@
 # TreadPool_
+线程池支持fixed与cached类型的定制
+在queue容器对象类型中选择使用shared_ptr指针类型，防止对象在处理时已经析构
+使用future类型定制submitTask提交任务的返回值。
+使用条件变量condition_variable和mutex互斥锁结合实现线程同步
+引入可变参与引用折叠原理，让线程池队列提交能够接收任意函数及参数个数的传递
